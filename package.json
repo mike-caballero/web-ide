@@ -1,0 +1,24 @@
+{
+  "name": "web-ide",
+  "version": "1.0.0",
+  "description": "Frontend project creating a code editor with TypeScript and React.",
+  "main": "index.js",
+  "repository": "git@github.com:mike-caballero/web-ide.git",
+  "author": "Mike Caballero <michaelstephencaballero@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "gts": "^5.2.0",
+    "typescript": "~5.2.0",
+    "@types/node": "20.8.2"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  }
+}
